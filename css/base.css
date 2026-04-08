@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+:root{
+    --black: #242424;
+    --white: #EEEEEE;
+    --gray: #6C6C6C;
+    --ff:"Poppins", sans-serif;
+    --white2: #F9F8F4;
+}
+
+.container{
+    max-width: 1470px;
+     min-width: 324px;
+    width: 100%;
+    height: 100%; 
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+     background-color: #2e1a47;
+}
