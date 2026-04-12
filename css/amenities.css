@@ -1,0 +1,100 @@
+.amenity__title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--ff);
+}
+
+.amenity__text {
+    color: rgba(255,255,255,0.65);
+    font-size: 17px;
+    line-height: 1.6;
+    font-family: var(--ff);
+    font-weight: 400;
+}
+
+.icon-box {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.icon-box svg path {
+    stroke: currentColor;
+    fill: none;
+}
+
+.amenity:hover .icon-box {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(124, 58, 237, 0.5);
+}   
+
+.icon-box {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.icon-box svg {
+    width: 26px;  
+    height: 26px;
+     color: #fff
+}
+
+
+.purple .icon-box {
+    background: linear-gradient(135deg, #7c3aed, #5b21b6);
+}
+
+.blue .icon-box {
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+}
+
+.pink .icon-box {
+    background: linear-gradient(135deg, #ec4899, #be185d);
+}
+
+.orange .icon-box {
+    background: linear-gradient(135deg, #f59e0b, #b45309);
+}
+
+.green .icon-box {
+    background: linear-gradient(135deg, #22c55e, #166534);
+}
+
+.cyan .icon-box {
+    background: linear-gradient(135deg, #06b6d4, #155e75);
+}
+
+.amenity:hover .icon-box {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+
+.amenities__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px; 
+}
+
+.amenity {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.amenity:hover {
+    transform: translateY(-8px);
+    border-color: rgba(124, 58, 237, 0.4);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}

@@ -1,6 +1,6 @@
 .header {
     padding: 24px 0;
-    background: rgba(15, 16, 32, 0.85);
+    background: rgba(15, 16, 32, 0.85); 
     backdrop-filter: blur(12px);
 }
 
@@ -35,7 +35,7 @@ header a {
 }
 
 .header__nav-list li a {
-    color: var(--white2);
+    color: #C0C0C0;
 }
 .button__primary {
     padding: 20px 24px;
@@ -46,4 +46,12 @@ header a {
     line-height: 100%;
     font-size: 16px;
     border-radius: 10px;
+}
+
+.banner__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    width:50px;
 }

@@ -1,28 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-    <div class="header">
+
+    <header class="header">
         <div class="container">
             <nav class="header__nav">
-                <a href="#" class="header__nav-logo">Dream Art</a>
-                <ul class="header__nav-list">
-             <li><a href="#">Услуги</a></li>
-        <li><a href="#">Как это работает</a></li>
-        <li><a href="#">Отзывы</a></li>
-        </ul>
+                <a href="#" class="header__nav-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" />
+                        <circle cx="12" cy="13" r="3" />
+                    </svg>
 
-        <div class="header__action">
-            <button class="button__primary">Связаться с нами</button>
-        </div>
+                    <span>Dream Art</span>
+                </a>
+                <ul class="header__nav-list">
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Как это работает</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                </ul>
+
+                <div class="header__action">
+                    <button class="button__primary">Связаться с нами</button>
+                </div>
             </nav>
-    </div>
-    </div>
+        </div>
+    </header>
+
+
+    <section class="banner">
+        <div class="container banner__wrap">
+
+            <!-- LEFT CONTENT -->
+            <div class="banner__content">
+
+                <span class="banner__badge">
+                    🚀 Восстановление данных за 24 часа
+                </span>
+
+                <h1 class="banner__title">
+                    Потеряли фото с <span class="sd">SD</span> <span class="card">карты</span>?
+                </h1>
+
+                <p class="banner__text">
+                    Профессиональное восстановление отформатированных SD карт от камер. Мы приложим все усилия, чтобы
+                    вернуть ваши бесценные воспоминания. Если не восстановим - не платите!
+                </p>
+
+                <div class="banner__buttons">
+                    <button class="button__primary">Восстановить данные →</button>
+                    <button class="button__secondary">Арендовать камеру</button>
+                </div>
+
+                <div class="banner__features">
+                    <div class="feature">
+                        <span>🔒</span>
+                        <p>100% конфиденциально</p>
+                    </div>
+
+                    <div class="feature">
+                        <span>⚡</span>
+                        <p>Быстрое восстановление</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="banner__image">
+                <img src="./img/banner.jpg" alt="Camera">
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="services">
+        <div class="container services__wrap">
+            <div class="services__content">
+                <h2 class="services__title">
+                    Наши услуги
+                </h2>
+
+                <p class="services__text">
+                    Профессиональные решения для восстановления данных и аренды камер
+                </p>
+
+            </div>
+
+            <div class="amenities">
+                <div class="amenities__grid">
+                    <div class="amenity purple">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.5 12H21.5M6 16H10M8.96656 4H15.0334C16.1103 4 16.6487 4 17.1241 4.16396C17.5445 4.30896 17.9274 4.5456 18.2451 4.85675C18.6043 5.2086 18.8451 5.6902 19.3267 6.65337L21.4932 10.9865C21.6822 11.3645 21.7767 11.5535 21.8434 11.7515C21.9026 11.9275 21.9453 12.1085 21.971 12.2923C22 12.4992 22 12.7105 22 13.1331V15.2C22 16.8802 22 17.7202 21.673 18.362C21.3854 18.9265 20.9265 19.3854 20.362 19.673C19.7202 20 18.8802 20 17.2 20H6.8C5.11984 20 4.27976 20 3.63803 19.673C3.07354 19.3854 2.6146 18.9265 2.32698 18.362C2 17.7202 2 16.8802 2 15.2V13.1331C2 12.7105 2 12.4992 2.02897 12.2923C2.05471 12.1085 2.09744 11.9275 2.15662 11.7515C2.22326 11.5535 2.31776 11.3645 2.50675 10.9865L4.67331 6.65337C5.1549 5.69019 5.3957 5.2086 5.75495 4.85675C6.07263 4.5456 6.45551 4.30896 6.87589 4.16396C7.35125 4 7.88969 4 8.96656 4Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h4 class="amenity__title">Восстановление данных</h4>
+                        <p class="amenity__text">Восстанавливаем данные с отформатированных, поврежденных или нечитаемых
+                            SD карт. Используем
+                            профессиональное ПО и опыт.</p>
+                    </div>
+
+                    <div class="amenity blue">
+                        <div class="icon-box">
+                            <svg viewBox="0 -2 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+
+                                <title>camera</title>
+                                <desc>Created with Sketch Beta.</desc>
+                                <defs>
+
+                                </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                    sketch:type="MSPage">
+                                    <g id="Icon-Set" sketch:type="MSLayerGroup"
+                                        transform="translate(-256.000000, -465.000000)" fill="currentColor">
+                                        <path
+                                            d="M272,487 C268.687,487 266,484.313 266,481 C266,477.687 268.687,475 272,475 C275.313,475 278,477.687 278,481 C278,484.313 275.313,487 272,487 L272,487 Z M272,473 C267.582,473 264,476.582 264,481 C264,485.418 267.582,489 272,489 C276.418,489 280,485.418 280,481 C280,476.582 276.418,473 272,473 L272,473 Z M286,489 C286,490.104 285.104,491 284,491 L260,491 C258.896,491 258,490.104 258,489 L258,473 C258,471.896 258.896,471 260,471 L264,471 L265,469 C265.707,467.837 265.896,467 267,467 L277,467 C278.104,467 278.293,467.837 279,469 L280,471 L284,471 C285.104,471 286,471.896 286,473 L286,489 L286,489 Z M284,469 L281,469 L280,467 C279.411,465.837 279.104,465 278,465 L266,465 C264.896,465 264.53,465.954 264,467 L263,469 L260,469 C257.791,469 256,470.791 256,473 L256,489 C256,491.209 257.791,493 260,493 L284,493 C286.209,493 288,491.209 288,489 L288,473 C288,470.791 286.209,469 284,469 L284,469 Z"
+                                            id="camera" sketch:type="MSShapeGroup">
+
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+
+
+                        </div>
+                        <h4 class="amenity__title">Аренда камер</h4>
+                        <p class="amenity__text">Профессиональные камеры Canon, Sony в аренду. Идеально для съемок,
+                            мероприятий и проектов.
+                        </p>
+                    </div>
+
+                    <div class="amenity pink">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12 6V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M16.24 16.24L12 12" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+
+                        </div>
+                        <h4 class="amenity__title">Срочное восстановление</h4>
+                        <p class="amenity__text">Экспресс-восстановление данных за 24 часа. Получите свои фотографии в
+                            кратчайшие сроки.</p>
+                    </div>
+
+                    <div class="amenity orange">
+                        <div class="icon-box">
+                            <svg fill="currentColor" viewBox="0 0 36 36" version="1.1"
+                                preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>shield-line</title>
+                                <path
+                                    d="M31.25,7.4a43.79,43.79,0,0,1-6.62-2.35,45,45,0,0,1-6.08-3.21L18,1.5l-.54.35a45,45,0,0,1-6.08,3.21A43.79,43.79,0,0,1,4.75,7.4L4,7.59v8.34c0,13.39,13.53,18.4,13.66,18.45l.34.12.34-.12c.14,0,13.66-5.05,13.66-18.45V7.59ZM30,15.93c0,11-10,15.61-12,16.43-2-.82-12-5.44-12-16.43V9.14a47.54,47.54,0,0,0,6.18-2.25,48.23,48.23,0,0,0,5.82-3,48.23,48.23,0,0,0,5.82,3A47.54,47.54,0,0,0,30,9.14Z"
+                                    class="clr-i-outline clr-i-outline-path-1"></path>
+                                <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
+                            </svg>
+
+                        </div>
+                        <h4 class="amenity__title">Гарантия безопасности</h4>
+                        <p class="amenity__text">Полная конфиденциальность ваших данных. Работаем с соблюдением всех
+                            стандартов безопасности.
+                        </p>
+                    </div>
+
+                    <div class="amenity green">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 3L13.4302 8.31181C13.6047 8.96 13.692 9.28409 13.8642 9.54905C14.0166 9.78349 14.2165 9.98336 14.451 10.1358C14.7159 10.308 15.04 10.3953 15.6882 10.5698L21 12L15.6882 13.4302C15.04 13.6047 14.7159 13.692 14.451 13.8642C14.2165 14.0166 14.0166 14.2165 13.8642 14.451C13.692 14.7159 13.6047 15.04 13.4302 15.6882L12 21L10.5698 15.6882C10.3953 15.04 10.308 14.7159 10.1358 14.451C9.98336 14.2165 9.78349 14.0166 9.54905 13.8642C9.28409 13.692 8.96 13.6047 8.31181 13.4302L3 12L8.31181 10.5698C8.96 10.3953 9.28409 10.308 9.54905 10.1358C9.78349 9.98336 9.98336 9.78349 10.1358 9.54905C10.308 9.28409 10.3953 8.96 10.5698 8.31181L12 3Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <h4 class="amenity__title">Консультация экспертов</h4>
+                        <p class="amenity__text">Бесплатная диагностика и консультация специалистов по восстановлению
+                            данных.</p>
+                    </div>
+
+                    <div class="amenity cyan">
+                        <div class="icon-box">
+                            <svg fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+                                <title />
+
+                                <g data-name="Layer 15" id="Layer_15">
+
+                                    <path
+                                        d="M25.12,6H6.88A3.89,3.89,0,0,0,3,9.89V21.11A3.89,3.89,0,0,0,6.88,25H25.12A3.89,3.89,0,0,0,29,21.11V9.89A3.89,3.89,0,0,0,25.12,6ZM6.88,8H25.12A1.89,1.89,0,0,1,27,9.89V11H5V9.89A1.89,1.89,0,0,1,6.88,8ZM25.12,23H6.88A1.89,1.89,0,0,1,5,21.11V13H27v8.11A1.89,1.89,0,0,1,25.12,23Z" />
+
+                                    <path d="M24,19H19a1,1,0,0,0,0,2h5a1,1,0,0,0,0-2Z" />
+
+                                </g>
+
+                            </svg>
+                        </div>
+                        <h4 class="amenity__title">Оплата за результат</h4>
+                        <p class="amenity__text">Платите только если мы успешно восстановили ваши данные. Не
+                            восстановили - деньги не берем!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
     <script src="./js/script.js"></script>
 </body>
+
 </html>

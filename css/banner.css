@@ -1,0 +1,93 @@
+.banner {
+    padding: 80px 0;
+    /* background: radial-gradient(circle at top left, #2b1b4d, #0f1020); */
+}
+
+.banner__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.banner__content {
+    max-width: 550px;
+}
+
+.banner__badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.banner__title {
+    font-size: 65px;
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+
+.banner__title .sd {
+    color: hsl(271, 100%, 71%)
+}
+
+.banner__title .card {
+    background: linear-gradient(90deg, rgba(227, 73, 181, 1) 50%, rgba(176, 23, 153, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner__text {
+    color: #c0c0c0;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.banner__buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.button__secondary {
+    padding: 20px 24px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.button__primary {
+    padding: 20px 24px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.banner__features {
+    display: flex;
+    gap: 30px;
+    color: #c0c0c0;
+    font-size: 15px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.banner__image img {
+    width: 600px;
+    border-radius: 20px;
+}
+
+
