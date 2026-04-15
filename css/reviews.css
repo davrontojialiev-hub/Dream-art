@@ -1,0 +1,96 @@
+.reviews {
+    padding: 90px 0;
+    background: radial-gradient(circle at top, rgba(138, 43, 226, 0.25), transparent 60%);
+}
+
+.reviews__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 50px;
+    font-family: var(--ff);
+}
+
+.reviews__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+.review {
+    position: relative;
+    padding: 25px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.review:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+
+.review__text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 18px;
+    position: relative;
+}
+
+/* декоративные кавычки */
+.review__text::before {
+    content: "“";
+    font-size: 50px;
+    color: rgba(168, 85, 247, 0.4);
+    position: absolute;
+    top: -20px;
+    left: -10px;
+}
+
+.review__stars {
+    color: gold;
+    margin-bottom: 12px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+
+.review__author {
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.review__occupation {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.55);
+    margin-top: 3px;
+}
+
+.review__author {
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.review__occupation {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.55);
+    margin-top: 3px;
+}
+
+/* надо исправить  */
