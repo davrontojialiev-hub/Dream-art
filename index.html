@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -14,33 +15,33 @@
         <div class="container">
             <nav class="header__nav">
                 <a href="#" class="header__nav-logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="logo-icon">
                         <path
                             d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" />
                         <circle cx="12" cy="13" r="3" />
                     </svg>
-
-                    <span>Dream Art</span>
+                    <span class="logo-text">Dream Art</span>
                 </a>
+
                 <ul class="header__nav-list">
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Как это работает</a></li>
-                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#how-it-works">Как это работает</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
                 </ul>
 
                 <div class="header__action">
-                    <button class="button__primary">Связаться с нами</button>
+                    <a href="tel:+998983073071" class="button__primary1">Позвонить</a>
                 </div>
             </nav>
         </div>
     </header>
 
 
-    <section class="banner">
+    <section id="banner" class="banner">
         <div class="container banner__wrap">
 
-            <!-- LEFT CONTENT -->
             <div class="banner__content">
 
                 <span class="banner__badge">
@@ -57,7 +58,7 @@
                 </p>
 
                 <div class="banner__buttons">
-                    <button class="button__primary">Восстановить данные →</button>
+                    <button class="button__primary2">Восстановить данные →</button>
                     <button class="button__secondary">Арендовать камеру</button>
                 </div>
 
@@ -75,7 +76,6 @@
 
             </div>
 
-            <!-- RIGHT IMAGE -->
             <div class="banner__image">
                 <img src="./img/banner.jpg" alt="Camera">
             </div>
@@ -84,7 +84,7 @@
     </section>
 
 
-    <section class="services">
+    <section id="services" class="services">
         <div class="container services__wrap">
             <div class="services__content">
                 <h2 class="services__title">
@@ -227,7 +227,7 @@
             </div>
     </section>
 
-    <section class="working">
+    <section id="working" class="working">
         <div class="container">
 
             <div class="working__content">
@@ -320,10 +320,7 @@
         </div>
     </section>
 
-
-
-
-    <section class="info">
+    <section id="info" class="info">
         <div class="container">
             <div class="info__box">
                 <div class="info__icon">
@@ -354,7 +351,7 @@
     </section>
 
 
-    <section class="reviews">
+    <section id="reviews" class="reviews">
         <div class="container">
             <h2 class="reviews__title">Отзывы наших клиентов</h2>
 
@@ -384,6 +381,132 @@
         </div>
     </section>
 
+    <section id="hero" class="hero">
+        <div class="hero__box">
+
+            <h2 class="hero__title">Начните восстановление данных</h2>
+
+            <p class="hero__text">
+                Профессиональная диагностика и восстановление. Оплата только за результат.
+            </p>
+
+            <div class="stepper-box">
+                <div class="step-card">
+                    <div class="step-num">01</div>
+                    <div class="step-txt">
+                        <h4>Диагностика</h4>
+                        <p>Ищем живые сектора</p>
+                    </div>
+                </div>
+
+                <div class="step-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-num">02</div>
+                    <div class="step-txt">
+                        <h4>Извлечение</h4>
+                        <p>Копируем каждый байт</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts">
+
+                <a href="tel:+998983073071" class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-info">
+                        <div class="label">Позвонить</div>
+                        <strong>+998 (98) 307 30 71</strong>
+                    </div>
+                </a>
+
+                <a href="https://t.me/Davrik_15" target="_blank" class="contact-card contact-card--telegram">
+                    <div class="contact-icon">💬</div>
+                    <div class="contact-info">
+                        <div class="label">Telegram</div>
+                        <strong>@Davrik_15</strong>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col footer__about">
+                    <a href="#" class="footer__logo">
+                        <div class="logo-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" />
+                                <circle cx="12" cy="13" r="3" />
+                            </svg>
+                        </div>
+                        <span>Dream Art</span>
+                    </a>
+                    <p class="footer__desc">Восстановление данных с SD карт. Аренда профессиональных камер.</p>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Услуги</h4>
+                    <ul class="footer__list">
+                        <li><a href="#services">Восстановление SD карт</a></li>
+                        <li><a href="#banner">Аренда камер</a></li>
+                        <li><a href="#how-it-works">Срочное восстановление</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Контакты</h4>
+                    <ul class="footer__list">
+                        <li><a href="tel:+998983073071">+998 98 307 30 71</a></li>
+                        <li><a href="https://t.me/rent01" target="_blank">@rent01</a></li>
+                        <li><a href="#reviews">Отзывы клиентов</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Социальные сети</h4>
+                    <div class="footer__socials">
+                        <a href="https://www.instagram.com/dreamart_rental/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/твой_профиль" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="https://t.me/Davrik_15" target="_blank" rel="noopener noreferrer"
+                            aria-label="Telegram Channel">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>© 2026 Dream Art. Восстановление данных и аренда камер.</p>
+                <div class="footer__links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="./js/script.js"></script>

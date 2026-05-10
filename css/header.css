@@ -14,13 +14,52 @@ header a {
     align-items: center;
     justify-content: space-between;
 }
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.header__nav-logo:hover {
+    transform: scale(1.02); 
+}
 
 .header__nav-logo {
-    font-family: var(--ff);
-    font-weight: 700;
-    line-height: 100%;
-    font-size: 24px;
-    color:  var(--white)
+    display: flex ;
+    align-items: center ;
+    gap: 12px ;
+    text-decoration: none ;
+    width: auto ; 
+    height: auto ;
+    background: none ;
+    align-items: center
+}
+
+.logo-text {
+     background: linear-gradient(304deg, rgba(225, 70, 166, 1) 0%, rgba(160, 80, 180, 1) 100%);
+    -webkit-background-clip: text ;
+    background-clip: text ;
+    -webkit-text-fill-color: transparent ;
+    color: transparent ;
+    font-size: 26px !important; 
+    font-weight: 700 ;
+    font-family: 'Inter', sans-serif ;
+    line-height: 1.1 ;
+    white-space: nowrap ;
+    display: inline-block ;
+}
+.logo-icon, .logo__circle svg {
+    stroke: rgba(191, 46, 136, 1) ;
+    width: 32px; 
+    height: 32px;
+}
+
+.logo__circle {
+    background: none ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__nav-list {
@@ -37,8 +76,8 @@ header a {
 .header__nav-list li a {
     color: #C0C0C0;
 }
-.button__primary {
-    padding: 20px 24px;
+.button__primary1 {
+    padding: 12px 21px;
     background: linear-gradient(304deg,rgba(191, 46, 136, 1) 0%, rgba(129, 58, 145, 1) 100%);
     color: var(--white);
     font-family: var(--ff);
@@ -55,3 +94,37 @@ header a {
     text-decoration: none;
     width:50px;
 }
+
+
+
+
+
+@media (max-width: 992px) {
+    .header__nav-list {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__nav-list {
+        display: none; 
+    }
+
+    .logo-text {
+        font-size: 20px; 
+        display: block !important;
+    }
+
+    .button__primary {
+        padding: 6px 12px; 
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 380px) {
+    .logo-text {
+        display: none; 
+    }
+    
+}
+

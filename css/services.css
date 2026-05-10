@@ -18,7 +18,6 @@
     position: relative;
 }
 
-/* декоративная линия под заголовком */
 .services__title::after{
     content: "";
     display: block;
